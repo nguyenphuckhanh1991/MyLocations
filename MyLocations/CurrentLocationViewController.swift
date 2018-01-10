@@ -22,4 +22,3 @@ class CurrentLocationViewController: UIViewController {
         super.viewDidLoad()
     }
 }
-
