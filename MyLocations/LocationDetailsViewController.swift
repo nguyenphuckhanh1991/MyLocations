@@ -8,10 +8,13 @@
 
 import UIKit
 import CoreLocation
+import CoreData
 
 class LocationDetailsViewController: UITableViewController {
+    var managedObjectContext: NSManagedObjectContext!
     var coordinate = CLLocationCoordinate2D(latitude: 0, longitude: 0)
     var placemark: CLPlacemark?
+    var date = Date()
     var categoryName = "No Category"
     private let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -36,7 +39,7 @@ class LocationDetailsViewController: UITableViewController {
         } else {
             addressLabel.text = "No Address Found"
         }
-        dateLabel.text = format(date: Date())
+        dateLabel.text = format(date: date)
         descriptionTextView.text = ""
         categoryLabel.text = categoryName
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
@@ -47,8 +50,20 @@ class LocationDetailsViewController: UITableViewController {
     @IBAction func done() {
         let hudView = HudView.hud(inView: navigationController!.view, animated: true)
         hudView.text = "Tapped"
-        afterDelay(0.6) { 
-            self.dismiss(animated: true, completion: nil)
+        let location = Location(context: managedObjectContext)
+        location.locationDescription = descriptionTextView.text
+        location.category = categoryName
+        location.latitude = coordinate.latitude
+        location.longitude = coordinate.longitude
+        location.date = date
+        location.placemark = placemark
+        do {
+            try managedObjectContext.save()
+            afterDelay(0.6) { 
+                self.dismiss(animated: true, completion: nil)
+            }
+        }catch {
+            fatalCoreDataError(error)
         }
     }
     @IBAction func cancel() {
