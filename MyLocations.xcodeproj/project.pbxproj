@@ -13,6 +13,10 @@
 		B74B69F02005B7ED00F8DB37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B74B69EE2005B7ED00F8DB37 /* Main.storyboard */; };
 		B74B69F22005B7ED00F8DB37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B74B69F12005B7ED00F8DB37 /* Assets.xcassets */; };
 		B74B69F52005B7ED00F8DB37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B74B69F32005B7ED00F8DB37 /* LaunchScreen.storyboard */; };
+		B74B69FD2005E5B600F8DB37 /* LocationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74B69FC2005E5B600F8DB37 /* LocationDetailsViewController.swift */; };
+		B77F94702005F1B20078CC6D /* CategoryPickerViewController:.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77F946F2005F1B20078CC6D /* CategoryPickerViewController:.swift */; };
+		B77F94722005F8660078CC6D /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77F94712005F8660078CC6D /* HudView.swift */; };
+		B77F94742005FD390078CC6D /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77F94732005FD390078CC6D /* Functions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		B74B69F12005B7ED00F8DB37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B74B69F42005B7ED00F8DB37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B74B69F62005B7ED00F8DB37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B74B69FC2005E5B600F8DB37 /* LocationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsViewController.swift; sourceTree = "<group>"; };
+		B77F946F2005F1B20078CC6D /* CategoryPickerViewController:.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CategoryPickerViewController:.swift"; sourceTree = "<group>"; };
+		B77F94712005F8660078CC6D /* HudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
+		B77F94732005FD390078CC6D /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +64,12 @@
 		B74B69E72005B7ED00F8DB37 /* MyLocations */ = {
 			isa = PBXGroup;
 			children = (
+				B77F94732005FD390078CC6D /* Functions.swift */,
+				B77F94712005F8660078CC6D /* HudView.swift */,
 				B74B69E82005B7ED00F8DB37 /* AppDelegate.swift */,
 				B74B69EA2005B7ED00F8DB37 /* CurrentLocationViewController.swift */,
+				B74B69FC2005E5B600F8DB37 /* LocationDetailsViewController.swift */,
+				B77F946F2005F1B20078CC6D /* CategoryPickerViewController:.swift */,
 				B74B69EC2005B7ED00F8DB37 /* SecondViewController.swift */,
 				B74B69EE2005B7ED00F8DB37 /* Main.storyboard */,
 				B74B69F12005B7ED00F8DB37 /* Assets.xcassets */,
@@ -139,6 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B74B69FD2005E5B600F8DB37 /* LocationDetailsViewController.swift in Sources */,
+				B77F94702005F1B20078CC6D /* CategoryPickerViewController:.swift in Sources */,
+				B77F94722005F8660078CC6D /* HudView.swift in Sources */,
+				B77F94742005FD390078CC6D /* Functions.swift in Sources */,
 				B74B69ED2005B7ED00F8DB37 /* SecondViewController.swift in Sources */,
 				B74B69E92005B7ED00F8DB37 /* AppDelegate.swift in Sources */,
 				B74B69EB2005B7ED00F8DB37 /* CurrentLocationViewController.swift in Sources */,

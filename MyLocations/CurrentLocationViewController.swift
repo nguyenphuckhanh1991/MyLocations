@@ -104,7 +104,7 @@ class CurrentLocationViewController: UIViewController {
             addressLabel.text = ""
             tagButton.isHidden = true
             let statusMessage: String
-            if let error = lastLocationError as? NSError {
+            if let error = lastLocationError as NSError? {
                 if error.domain == kCLErrorDomain && error.code == CLError.denied.rawValue {
                     statusMessage = "Location Services Disabled"
                 } else {
@@ -150,6 +150,16 @@ class CurrentLocationViewController: UIViewController {
         }
         return line1 + "\n" + line2
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "TagLocation" {
+            let navigationController = segue.destination
+                as! UINavigationController
+            let controller = navigationController.topViewController
+                as! LocationDetailsViewController
+            controller.coordinate = location!.coordinate
+            controller.placemark = placemark
+        }
+    }
 }
 // MARK: - CLLocationManagerDelegate
 extension CurrentLocationViewController: CLLocationManagerDelegate {
@@ -192,7 +202,7 @@ extension CurrentLocationViewController: CLLocationManagerDelegate {
                 print("*** Going to geocode")
                 performingReverseGeocoding = true
                 geocoder.reverseGeocodeLocation(newLocation, completionHandler: { (placemarks, error) in
-                    print("*** Found placemarks: \(placemarks), error : \(error)")
+                    print("*** Found placemarks: \(placemarks), " + "error : \(error)")
                     self.lastLocationError = error
                     if error == nil, let p = placemarks, !p.isEmpty {
                         self.placemark = p.last!
