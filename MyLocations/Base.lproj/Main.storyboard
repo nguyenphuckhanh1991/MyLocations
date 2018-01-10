@@ -74,6 +74,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7dH-TN-TKg" secondAttribute="trailing" constant="20" symbolic="YES" id="2oO-tZ-noZ"/>
                             <constraint firstItem="v7c-mo-m2J" firstAttribute="centerY" secondItem="7dH-TN-TKg" secondAttribute="centerY" id="5FQ-Nb-9ic"/>
                             <constraint firstItem="7dH-TN-TKg" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="20" id="5mf-uW-O9y"/>
                             <constraint firstItem="B7d-dA-hSa" firstAttribute="centerX" secondItem="PQr-Ze-W5v" secondAttribute="centerX" id="6GG-42-pzJ"/>
@@ -83,11 +84,15 @@
                             <constraint firstItem="8Xu-t4-xg9" firstAttribute="centerY" secondItem="6Px-qM-RrS" secondAttribute="centerY" id="KfM-pm-q4d"/>
                             <constraint firstItem="6Px-qM-RrS" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="20" id="NnP-y0-1Yf"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="8Xu-t4-xg9" secondAttribute="trailing" constant="20" id="TaO-kL-aW9"/>
+                            <constraint firstItem="8Xu-t4-xg9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tsR-hK-woN" secondAttribute="leading" constant="20" symbolic="YES" id="UyI-oi-EM0"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ehh-Hq-bO1" secondAttribute="trailing" constant="20" symbolic="YES" id="XSw-cL-Mx7"/>
                             <constraint firstItem="QmR-kk-zgd" firstAttribute="centerY" secondItem="PQr-Ze-W5v" secondAttribute="centerY" id="dvl-78-cEh"/>
                             <constraint firstItem="QmR-kk-zgd" firstAttribute="centerX" secondItem="PQr-Ze-W5v" secondAttribute="centerX" id="e9d-el-8Ar"/>
+                            <constraint firstItem="v7c-mo-m2J" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tsR-hK-woN" secondAttribute="leading" constant="20" symbolic="YES" id="eBF-cv-Lmm"/>
                             <constraint firstItem="oJb-1E-fXI" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="25" id="gbW-rY-HqN"/>
                             <constraint firstItem="Ehh-Hq-bO1" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="20" id="i7s-7R-Fcr"/>
                             <constraint firstItem="oJb-1E-fXI" firstAttribute="centerX" secondItem="PQr-Ze-W5v" secondAttribute="centerX" id="jZb-7I-gR0"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6Px-qM-RrS" secondAttribute="trailing" constant="20" symbolic="YES" id="tbC-Uj-1ba"/>
                             <constraint firstItem="Ehh-Hq-bO1" firstAttribute="top" secondItem="6Px-qM-RrS" secondAttribute="bottom" constant="20" id="wuY-9n-Hax"/>
                             <constraint firstItem="6Px-qM-RrS" firstAttribute="top" secondItem="7dH-TN-TKg" secondAttribute="bottom" constant="20" id="xn4-dO-bRF"/>
                         </constraints>
@@ -105,7 +110,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="892" y="-337"/>
+            <point key="canvasLocation" x="875" y="-464"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
