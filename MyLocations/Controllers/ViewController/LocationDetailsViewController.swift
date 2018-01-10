@@ -123,8 +123,6 @@ class LocationDetailsViewController: UITableViewController {
         } else if indexPath.section == 2 && indexPath.row == 2 {
             addressLabel.frame.size = CGSize(width: view.bounds.size.width - 115, height: 10000)
             addressLabel.sizeToFit()
-            addressLabel.frame.origin.x = view.bounds.size.width -
-                addressLabel.frame.size.width - 15
             return addressLabel.frame.size.height + 20
         } else {
             return 44

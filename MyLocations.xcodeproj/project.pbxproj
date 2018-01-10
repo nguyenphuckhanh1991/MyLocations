@@ -54,8 +54,6 @@
 		B74B69DC2005B7ED00F8DB37 = {
 			isa = PBXGroup;
 			children = (
-				B77F947820060BEA0078CC6D /* Location+CoreDataClass.swift */,
-				B77F947920060BEA0078CC6D /* Location+CoreDataProperties.swift */,
 				B74B69E72005B7ED00F8DB37 /* MyLocations */,
 				B74B69E62005B7ED00F8DB37 /* Products */,
 			);
@@ -72,20 +70,78 @@
 		B74B69E72005B7ED00F8DB37 /* MyLocations */ = {
 			isa = PBXGroup;
 			children = (
-				B77F94732005FD390078CC6D /* Functions.swift */,
-				B77F94712005F8660078CC6D /* HudView.swift */,
+				B77F94822006177B0078CC6D /* Souce */,
+				B77F947F200617540078CC6D /* Controllers */,
 				B74B69E82005B7ED00F8DB37 /* AppDelegate.swift */,
+				B77F947E200617400078CC6D /* View */,
+				B77F947D200617330078CC6D /* Extension */,
+				B77F947C200617260078CC6D /* CoreData */,
+			);
+			path = MyLocations;
+			sourceTree = "<group>";
+		};
+		B77F947C200617260078CC6D /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				B77F947820060BEA0078CC6D /* Location+CoreDataClass.swift */,
+				B77F947920060BEA0078CC6D /* Location+CoreDataProperties.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		B77F947D200617330078CC6D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B77F94732005FD390078CC6D /* Functions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B77F947E200617400078CC6D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B77F94712005F8660078CC6D /* HudView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B77F947F200617540078CC6D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B77F9481200617650078CC6D /* ViewController */,
+				B77F94802006175B0078CC6D /* Storyboard */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B77F94802006175B0078CC6D /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				B74B69EE2005B7ED00F8DB37 /* Main.storyboard */,
+				B74B69F32005B7ED00F8DB37 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		B77F9481200617650078CC6D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
 				B74B69EA2005B7ED00F8DB37 /* CurrentLocationViewController.swift */,
 				B74B69FC2005E5B600F8DB37 /* LocationDetailsViewController.swift */,
 				B77F946F2005F1B20078CC6D /* CategoryPickerViewController:.swift */,
 				B74B69EC2005B7ED00F8DB37 /* SecondViewController.swift */,
-				B74B69EE2005B7ED00F8DB37 /* Main.storyboard */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B77F94822006177B0078CC6D /* Souce */ = {
+			isa = PBXGroup;
+			children = (
 				B74B69F12005B7ED00F8DB37 /* Assets.xcassets */,
-				B74B69F32005B7ED00F8DB37 /* LaunchScreen.storyboard */,
 				B74B69F62005B7ED00F8DB37 /* Info.plist */,
 				B77F9475200609F30078CC6D /* DataModel.xcdatamodeld */,
 			);
-			path = MyLocations;
+			path = Souce;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,7 +364,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8GRCRJCWSL;
-				INFOPLIST_FILE = MyLocations/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MyLocations/Souce/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = khanh.nguyen.MyLocations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -323,7 +379,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8GRCRJCWSL;
-				INFOPLIST_FILE = MyLocations/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MyLocations/Souce/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = khanh.nguyen.MyLocations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
